@@ -6,11 +6,21 @@
 	border-style:solid;
 	border-width: 2px;
 	border-color: #d3d3d3;
+	font-family: 'Roboto', sans-serif;
 }
 .clear{
 	clear:both;
 }
 #container{
+	display:flex;
+	width:50%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
     zoom: 0.8;
     -moz-transform: scale(0.8);
 }
@@ -20,17 +30,17 @@
 }
 
 #formpage form input{
-	width:370px;
-	font-size: 20px;
+	width:350px;
+	font-size: 18px;
 	margin: 0 2px 0 2px;
 }
 input[type="text"] {
-    background: #fafafa;
-    color: #d2d2d2;
+    background: #f5f5f5;
+    color: #808080;
     
 }
 input[name="text2"]{
-	padding: 5px 0 5px 0;
+	padding: 5px 0 5px 13px;
 }
 
 #signup img{
@@ -47,12 +57,14 @@ input[name="text2"]{
 	border-style:solid;
 	border-width: 2px;
 	border-color: #d3d3d3;
+	margin-top: 8px;
 }
 #loginx {
 	font-size: 20px;
 	text-align: center;
 	margin-top: 20px;
 	color: #737373;
+
 }
 #loginx a{
 	text-decoration: none;
@@ -75,17 +87,20 @@ input[name="text2"]{
 }
 /*positioning for form*/
 #rightpart {
+	text-align: center;
 	padding: 10px;
-	float: right;
-	margin-right: 530px;
+	width:60%;
+
 }
 /* this is where the form ends */
 
 /*left side*/
+#left {
+	text-align: center;
+	width: 60%;
+}
+
 #left img{
-	float: left;
-	margin-left: 550px;
-	margin-top: 100px;
 	height: 600px;
 	width: auto;
 }
@@ -97,6 +112,8 @@ input[name="text2"]{
 
 }
 #footer{
+	position: absolute;
+	bottom: 20px;
 	margin-top: 50px;
 	margin-left: 25%;
 	font-size: 10px;
@@ -135,7 +152,3 @@ input[name="text2"]{
 @media (max-width: 435px) {
  
    /* Selectors and styles affecting screens UP TO 480px (Phone) */
-#left{
-	display: none;
-}
-}
